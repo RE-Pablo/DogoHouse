@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d5cafece0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut Icon" href="Final2.jpeg">
+    <link rel="stylesheet" href="index.css">
+    <title>DogoHouse</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <a class="navbar-brand" href="index.html">
+                    <img class="huella" src="huella3.jpg">
+                </a>
+            </div>
+    
+            <!-- Menú de hamburguesa -->
+            <div class="menu-toggle">
+                <input type="checkbox" id="toggle">
+                <label for="toggle" class="toggle-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+    
+            <!-- Menú desplegable -->
+            <div class="center">
+                <ul class="menu animate__animated">
+                    <li><a href="index.html" style="color:orange">Inicio</a></li>
+                    <li><a href="#perro">Sobre nosotros</a></li>
+                    <li><a href="#contactanos">Contacto</a></li>
+                    <li><a href="Tienda.html">Tienda</a></li>
+                    <li><a class="nav-link" href="#">Entrar <i class="fa-solid fa-circle-user"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="section-inicio">
+            <img src="Final4.png" class="logo" alt="Dogo House Logo">
+            <div style="font-family: Amatic SC;">
+                <a style="text-decoration: none; color: black;" href="index.html">
+                    <h1 style=" font-size: 150px">DOGO</h1>
+                    <h1 style=" font-size: 150px">HOUSE</h1>
+                </a>
+            </div>
+            <h6 style="font-family: 'Amatic SC', cursive; font-weight: bold; font-size: 25px; padding-bottom: 20px;">SU MUNDO SILENCIOSO</h6>
+            <button onclick="location.href='#perro'" style="margin-bottom: 50px;" class="conocenos-btn">Conócenos</button>
+        </section>
+
+        <section class="section-conocenos">
+
+            <img src="camino.png" alt="camino">
+            <div id="perro" class="perro">
+                <img class="perro" src="perro2.png" alt="Perro">
+            </div>
+            <div class="div-somos">
+                <h2 style="font-family: 'Amatic SC', cursive; font-size: 54px; margin: 0;">¿QUIÉNES SOMOS?</h2>
+                <span>Somos Dogo House, una empresa que busca proporcionar un ambiente de paz y tranquilidad para aquellos perros en situaciones de ansiedad, ya sea por fuegos artificiales o por ruidos externos.</span>
+            </div>
+            <div class="dueña">
+                <img class="dueña" src="dueña.jpeg" alt="Dueña">
+            </div>
+            <div class="div-valores">
+                <h2 style="font-family: 'Amatic SC', cursive; font-size: 54px;">VISIÓN</h2>
+                <span>Para el 2030 estar en la mayor parte de los hogares mexicanos brindando tranquilidad emocional a nuestros clientes y sus perritos.</span>
+            </div>
+            <div class="div-valores">
+                <h2 style="font-family: 'Amatic SC', cursive; font-size: 54px;">Misión</h2>
+                <span>Somos una empresa que desea disminuir la ansiedad en los perros provocada por los fuertes ruidos exteriores, mejorando así la salud de nuestros mejores amigos.</span>
+            </div>
+        </section>
+
+        <section class="section-reservar">
+            <h2 style="font-family: 'Amatic SC', cursive; font-size: 54px; margin: 0; padding:1rem;">Reserva Ahora:</h2>
+            <div class="carousel-container"> <!-- Nuevo contenedor -->
+                <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <!-- Indicators -->
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <img src="chica.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h5>Casa Chica (Estándar)</h5>
+                                <p>$2,400.00</p>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <img src="mediana.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h5>Casa Mediana (Estándar)</h5>
+                                <p>$2,632.00</p>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <img src="grande.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h5>Casa Grande (Estándar)</h5>
+                                <p>$4,449.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <button class="btn-carrito">Aregar al carrito</button>
+            </div>
+        </section>
+        <section class="section-clientes">
+            <div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="contactanos" class="section-contacto">
+            <div class="div-redes">
+                <h2>Contáctanos</h2>
+                <a href="https://www.instagram.com/dogohouse_esp/?next=%2F" target="_blank">Instagram<i><i class="fa-brands fa-instagram"></i></i></a>
+            </div>
+        </section>
+        <section class="section-comentarios">
+            <div class="div-comentarios">
+                <h2>COMENTARIOS:</h2>
+            </div>
+            <div class="div-form-comentarios">
+                <form>
+                    <div class="form-group">
+                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="asunto" name="asunto" required placeholder="Asunto">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="mensaje" name="mensaje" rows="3" required placeholder="Mensaje"></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+        </section>
+        <section class="section-info">
+            <a href="#">© 2024 Creado por el equipo de DogoHouse</a>
+            <a href="TyC.html">Términos y Condiciones</a>
+            <a href="#">Política de Privacidad</a>
+        </section>
+    </footer>
+
+    <!-- Creación del script -->
+    <script src="index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+6xlJ5f/6P6a5r8lKk2s6TUjw8q+8C6R4iw1E6B" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
